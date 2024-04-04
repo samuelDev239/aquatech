@@ -21,9 +21,26 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.navbar a {
+    color: #e3b062;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+.navbar a:hover{
+    color: #32b9cd;
+}
 
 .header {
     border-bottom: 3px solid #32b9cd;
+    position: fixed;
+    width: 100%;
+    background-color: #1d1d1d3a;
+    backdrop-filter: blur(20px);
+}
+.headerAlt {
+    border-bottom: 3px solid #32b9cd;
+    background-color: #1d1d1d3a;
+    backdrop-filter: blur(20px);
 }
 
 .container {
@@ -34,4 +51,117 @@ body {
 
 .header .container {
     justify-content: space-between;
+}
+.headerAlt .container {
+    justify-content: space-between;
+}
+.banner {
+    height: 500px;
+    background-attachment: fixed;
+    color: #fff;
+    background-image: url(./assets/imagens/bg-jelly-fish-para_outras_pags.png);
+    box-shadow: rgba(0, 0, 0, 0.705) 0px -100px 36px -28px inset;;
+}
+
+.banner .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.banner .container p {
+    font-size: 32px;
+    width: 200px;
+   
+}
+li {
+    cursor: pointer;
+}
+.social {
+    background-color: #f7f7f7;
+    height: 500px;
+}
+.social .container{
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+}
+.imagem{
+width: 100px;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.social .container .box p{
+
+    width: 400px;
+
+}
+
+.footer {
+    background-color: #32b9cd;
+    color: white;
+}
+.footer .container {
+    justify-content: center;
+    text-align: center;
+}
+
+.bodyAlt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: url(./assets/imagens/bg-jelly-fish-para_outras_pags.png);
+}
+
+.containerCad {
+    width: 300px;
+    border-radius: 5px;
+    height: 450px;
+    padding: 0rem 2rem;
+    background-color: #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+.containerCad h2{
+    font-size: 22px;
+    color: #e4005a;
+}
+.inputText {
+    border: none;
+    width: 95%;
+    border-radius: 10px;
+    height: 35px;
+    text-align: center;
+}
+label {
+    font-weight: 600;
+    color: #e4005a;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+}
+.btn {
+    width: 30%;
+    height: 35px;
+    border-radius: 10px;
+    background-color:  #e4005a ;
+    color: #fff;
+    border: none;
+}
+.inputText:focus {
+    border: 1px solid #0ea7bb;
 }
